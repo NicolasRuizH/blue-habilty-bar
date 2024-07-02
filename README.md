@@ -2,4 +2,6 @@
 
 Este es el archivo README para mi proyecto.
 
-![Vista previa](https://nicolasruizh.github.io/blue-habilty-bar/)
+## Enlace a la página web
+
+Puedes ver la página web del proyecto [aquí](https://nicolasruizh.github.io/blue-habilty-bar/).
