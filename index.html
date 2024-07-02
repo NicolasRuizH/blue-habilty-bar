@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <title>Clase-6</title>
 </head>
+
 <body>
+
   <header class="header">
     <input type="checkbox" class="header__checkbox" id="open-menu">
     <label for="open-menu" class="header__open-nav-button" role="button">=</label>
@@ -16,14 +19,14 @@
     </div>
     <nav class="header__nav">
       <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="#">about <i class="fa-solid fa-list-check"></i></a></li>
-        <li class="header__nav-item"><a href="#">portfolio <i class="fa-regular fa-circle-user"></i></a></li>
-        <li class="header__nav-item"><a href="#">contacto <i class="fa-brands fa-whatsapp"></i></a></li>
+        <li class="header__nav-item"><a href="#profile">about <i class="fa-solid fa-list-check"></i></a></li>
+        <li class="header__nav-item"><a href="#portfolio">portfolio <i class="fa-regular fa-circle-user"></i></a></li>
+        <li class="header__nav-item"><a href="#form">contacto <i class="fa-brands fa-whatsapp"></i></a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="profile">
+  <main class="profile" id="profile">
     <div class="profile__wrapper">
       <div class="profile__img-container">
         <img src="./pics/mipiano.jpg" class="profile__img">
@@ -32,7 +35,9 @@
         <div class="profile__data">
           <div class="profile__description">
             <h1> Quien es Nicolas Ruiz?</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ut consequatur doloremque necessitatibus. Quis doloremque excepturi itaque eos at rerum molestiae earum, quos error ad, reiciendis omnis perspiciatis maxime iste.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ut consequatur doloremque
+              necessitatibus. Quis doloremque excepturi itaque eos at rerum molestiae earum, quos error ad, reiciendis
+              omnis perspiciatis maxime iste.</p>
           </div>
           <div class="profile__skills-container">
             <h2>SKILLS</h2>
@@ -65,32 +70,68 @@
       </div>
     </div>
   </main>
-  
-  <section class="portfolio">
-    <h1>PORTFOLIO SECTION</h1>
-      <div class="portfolio__project-container">
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">PROJECT</h2>
-        </div>
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">PROJECT</h2>
-        </div>
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">PROJECT</h2>
-        </div>
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">PROJECT</h2>
-        </div>
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">PROJECT</h2>
-        </div>
-        <div class="portfolio__project">
-          <h2 class="portfolio__project-name">PROJECT</h2>
-        </div>
-    </div>
 
+  <section class="portfolio" id="portfolio">
+    <h2>PORTFOLIO SECTION</h2>
+    <div class="portfolio__project-container">
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROJECT</h2>
+      </div>
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROJECT</h2>
+      </div>
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROJECT</h2>
+      </div>
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROJECT</h2>
+      </div>
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROJECT</h2>
+      </div>
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROJECT</h2>
+      </div>
+    </div>
   </section>
 
+  <section class="form" id="form">
+    <h2 class="form__title">CONTACT</h2>
+    <form class="form__form">
+      <div class="form__input-container">
+        <label>
+          Nombre
+          <input type="text" placeholder="name">
+        </label>
+      </div>
+      <div class="form__input-container">
+        <label>
+          Apellido
+          <input type="text" placeholder="surname">
+        </label>
+      </div>
+      <div class="form__input-container">
+        <label>
+          Mail
+          <input type="text" placeholder="ejemplo@gmail.com">
+        </label>
+      </div>
+      <div class="form__input-container">
+        <label>
+          Mensaje
+          <textarea placeholder="escribe mensaje"></textarea>
+        </label>
+      </div>
+      <div class="form__input-container">
+        <input type="submit">
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <strong>rNh - </strong> Mi nombre completo
+  </footer>
 
 </body>
+
 </html>
