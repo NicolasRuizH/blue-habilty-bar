@@ -23,7 +23,7 @@ label {
 }
 
 
-/* Header Section */
+/* HEADER Section */
 header {
   background-color: white;
   display: flex;
@@ -35,14 +35,12 @@ header {
   top: 0;
   z-index: 50;
 }
-
 .header__logo {
   max-width: 100%;
   width: 64px;
   margin: 10px 20px;
 
 }
-
 .header__open-nav-button {
   color: #48e;
   font-size: 3rem;
@@ -50,11 +48,9 @@ header {
   position: absolute;
   right: 10px;
 }
-
 .header__checkbox {
   display: none;
 }
-
 .header__nav {
   display: none;
   background-color: white;
@@ -125,7 +121,8 @@ header {
 
 /* Header Ends */
 
-/* profile section */
+
+/* PROFIILE section */
 
 .profile {
   container-name: profile;
@@ -244,6 +241,8 @@ h1 {
 
 /* Profile Ends */
 
+
+
 /* PORTFOLIO SECTION */
 
 .portfolio {
@@ -270,8 +269,8 @@ h1 {
   padding: 20px;
 }
 
-.portfolio__project {
-  background-image: linear-gradient(#0009, #0009), url(../pics/mipiano.jpg);
+.portfolio__project-1{
+  background-image: linear-gradient(#0009, #0009), url(../pics/Perfume.PNG);
   /* linear es para poner opaco */
   background-position: center;
   background-size: cover;
@@ -279,16 +278,88 @@ h1 {
   display: grid;
   place-content: center;
 }
-
-.portfolio__project:hover {
-  background-image: linear-gradient(#0002, #0002), url(../pics/mipiano.jpg);
+.portfolio__project-1:hover {
+  background-image: linear-gradient(#0002, #0002), url(../pics/Perfume.PNG);
   outline: 2px solid white;
 }
 
+
+.portfolio__project-2{
+  background-image: linear-gradient(#0009, #0009), url(../pics/3-autos-colores.PNG);
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  display: grid;
+  place-content: center;
+}
+.portfolio__project-2:hover {
+  background-image: linear-gradient(#0002, #0002), url(../pics/3-autos-colores.PNG);
+  outline: 2px solid white;
+}
+
+
+.portfolio__project-3{
+  background-image: linear-gradient(#0009, #0009), url(../pics/1-proyecto-verdeAgua.PNG);
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  display: grid;
+  place-content: center;
+}
+.portfolio__project-3:hover {
+  background-image: linear-gradient(#0002, #0002), url(../pics/1-proyecto-verdeAgua.PNG);
+  outline: 2px solid white;
+}
+
+
+.portfolio__project-4{
+  background-image: linear-gradient(#0009, #0009), url(../pics/Huddle-purple.PNG);
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  display: grid;
+  place-content: center;
+}
+.portfolio__project-4:hover {
+  background-image: linear-gradient(#0002, #0002), url(../pics/Huddle-purple.PNG);
+  outline: 2px solid white;
+}
+
+
+.portfolio__project-5{
+  background-image: linear-gradient(#0009, #0009), url(../pics/joinOurComunity-green-white.PNG);
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  display: grid;
+  place-content: center;
+}
+.portfolio__project-5:hover {
+  background-image: linear-gradient(#0002, #0002), url(../pics/joinOurComunity-green-white.PNG);
+  outline: 2px solid white;
+}
+
+
+.portfolio__project-6 {
+  background-image: linear-gradient(#0009, #0009), url(../pics/Menu-hambu-desplega.PNG);
+  /* linear es para poner opaco */
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  display: grid;
+  place-content: center;
+}
+.portfolio__project-6:hover {
+  background-image: linear-gradient(#0002, #0002), url(../pics/Menu-hambu-desplega.PNG);
+  outline: 2px solid white;
+}
+
+
 .portfolio {
-  h2 {
+  h2 a{
     font-size: 3rem;
     color: white;
+    text-decoration: none;
   }
 }
 
@@ -299,15 +370,15 @@ h1 {
     grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
   }
 
-  .portfolio__project {
+  .portfolio__project, .portfolio__project-1, .portfolio__project-2, .portfolio__project-3, .portfolio__project-4, .portfolio__project-5, .portfolio__project-6 {
     height: 100%;
   }
 
-  .portfolio__project:first-child {
+  .portfolio__project-1 {
     grid-column: span 2;
   }
 
-  .portfolio__project:nth-child(6) {
+  .portfolio__project-6{
     grid-column: span 2;
   }
 }
