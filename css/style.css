@@ -34,6 +34,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
+  border-bottom: solid 2px #48e;
 }
 .header__logo {
   max-width: 100%;
@@ -140,11 +141,25 @@ header {
 .profile__img-container {
   max-height: 500px;
   overflow: hidden;
+  position: relative;
+  h3{
+    position: absolute;
+    top: 40%;
+    right: 100px;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: 15px;
+    background-color: #26a;
+    border-radius: 15px;
+    text-align: center;
+  }
 }
 
 .profile__img {
   max-width: 100%;
   width: 720px;
+  filter: blur(5px);
 }
 
 .profile__data-container {
@@ -236,6 +251,25 @@ h1 {
     background-color: white;
     max-height: initial;
     border-radius: 25px 0 0 25px;
+  }
+
+  .bar--80{
+    transition: 2s linear;
+  }
+  .bar--80:hover{
+    width: 100%;
+  }
+  .bar--60{
+    transition: 2s linear;
+  }
+  .bar--60:hover{
+    width: 100%;
+  }
+  .bar--40{
+    transition: 2s linear;
+  }
+  .bar--40:hover{
+    width: 100%;
   }
 }
 
@@ -363,14 +397,21 @@ h1 {
   }
 }
 
-/* porfolio queries */
-@container portfolio (min-width: 56rem) {
+/* PORTFOLIO Queries */
+@media screen and (min-width: 56rem) {
+  .portfolio{
+    height: 80%;
+  }
+  .portfolio h2{
+    font-size: 50px;
+  }
   .portfolio__project-container {
+    height: 120%;
     grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: repeat(4, minmax(250px, 1fr));
   }
 
-  .portfolio__project, .portfolio__project-1, .portfolio__project-2, .portfolio__project-3, .portfolio__project-4, .portfolio__project-5, .portfolio__project-6 {
+  .portfolio__project-1, .portfolio__project-2, .portfolio__project-3, .portfolio__project-4, .portfolio__project-5, .portfolio__project-6 {
     height: 100%;
   }
 
